@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Квартиры и дома для ценителей роскоши">
+    <link href="assets/css/main.css" rel="stylesheet">
+    <link rel="shortcut icon" href="assets/img/favicon.svg" type="image/x-icon">
+    <title>INCHAPIN — Главная страница</title>
+    <script src="https://unpkg.com/imask" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/smooth-scrollbar@8.8.4/dist/smooth-scrollbar.min.js" defer></script>
+    <script src="assets/js/index.js" type="module"></script>
+  </head>
+  <body>
+    <header class="page-header fixed">
+      <button class="menu-button page-header__menu" type="button">
+        <span class="menu-button__icon"><span></span></span><span class="menu-button__label">Меню</span>
+      </button>
+      <nav class="site-navigation page-header__navigation">
+        <ul class="placeholder-nav-list">
+          <li class="placeholder-nav-item"> <a href="#">Элемент навигации</a></li>
+          <li class="placeholder-nav-item"> <a href="#">Элемент навигации</a></li>
+          <li class="placeholder-nav-item"> <a href="#">Элемент навигации</a></li>
+        </ul>
+      </nav>
+      <select class="custom-select page-header__select" name="apartments">
+        <option value="Выбрать квартиру" selected disabled>Выбрать квартиру</option>
+        <option value="Адрес #1">Адрес #1</option>
+        <option value="Адрес #2">Адрес #2</option>
+        <option value="Адрес #3">Адрес #3</option>
+      </select>
+      <a class="logo page-header__logo" href="/">
+        <span class="visually-hidden">Inchapin</span>
+        <svg class="svg-icon logo-icon">
+          <use xlink:href="assets/img/symbol-sprite.svg#logo"></use>
+        </svg>
+      </a>
+      <div class="page-header__contacts">
+        <a class="phone page-header__phone" href="tel:+74955272121">
+          <span class="phone__label">+7 495 527 21 21</span>
+          <div class="phone__icon">
+            <svg class="svg-icon phone-icon">
+              <use xlink:href="assets/img/symbol-sprite.svg#phone"></use>
+            </svg>
+          </div>
+        </a>
+        <button class="main-button main-button--text-only call-request-button page-header__call-request" type="button" text>
+          <span class="main-button__slide-label" data-label="Заказать звонок">
+            <span class="visually-hidden">Заказать звонок</span>
+          </span>
+        </button>
+      </div>
+    </header>
+    <main class="page-content">
+      <h1 class="visually-hidden">Главная страница</h1>
+      <section class="section hero-section">
+        <h2 class="section__title visually-hidden"></h2>
+        <div class="hero-section__image-wrapper">
+          <picture class="hero-section__image">
+            <source
+              type="image/webp"
+              srcset="assets/img/hero-image-1080px.webp 1080w, assets/img/hero-image-1360px.webp 1360w, assets/img/hero-image-1760px.webp 1760w"
+              sizes="100vw">
+            <source
+              srcset="assets/img/hero-image-1080px.jpg 1080w, assets/img/hero-image-1360px.jpg 1360w, assets/img/hero-image-1760px.jpg 1760w"
+              sizes="100vw">
+              <img src="assets/img/hero-image-1080px.jpg" alt="Красивый двухэтажный дом на фоне зимнего пейзажа" loading="lazy">
+          </picture>
+        </div>
+        <div class="hero-section__text-content">
+          <p class="hero-section__description">Дом бизнес-класса<br>для ценителей роскоши</p>
+          <svg class="svg-icon display-decor-text-icon hero-section__display-text">
+            <use xlink:href="assets/img/symbol-sprite.svg#display-decor-text"></use>
+          </svg>
+        </div>
+      </section>
+      <section class="section about-section">
+        <div class="about-section__column">
+          <h2 class="section__title about-section__title">О проекте</h2>
+          <div class="about-section__image-wrapper">
+            <picture>
+              <source
+                type="image/webp"
+                srcset="assets/img/house-635px.webp 635w, assets/img/house-1346px.webp 1346w"
+                sizes="(min-width: 768px) 50vw, 100vw">
+              <source
+                srcset="assets/img/house-635px.jpg 635w, assets/img/house-1346px.jpg 1346w"
+                sizes="(min-width: 768px) 50vw, 100vw">
+                <img src="assets/img/house-635px.jpg" alt="Дом с заснеженой крышей на фоне ёлок" loading="lazy">
+            </picture>
+            <div class="decor-sticker about-section__decor-sticker">
+              <svg class="svg-icon abstract-symb-icon">
+                <use xlink:href="assets/img/symbol-sprite.svg#abstract-symb"></use>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="about-section__column">
+          <p class="section__lead about-section__lead">Уютное и безопасное пространство для <strong>счастливой,
+              спокойной и размеренной жизни</strong>
+          </p>
+          <p class="section__description about-section__description"><strong>Квартиры от 65 до 356 м<sup>2</sup> с
+              чистовой отделкой,</strong> балконами, лоджиями и террасами в собственной закрытой охраняемой территории.
+          </p>
+          <div class="video-widget">
+            <div class="video-widget__details-wrapper">
+              <dl class="video-widget__details">
+                <div>
+                  <dt>Название видео</dt>
+                  <dd class="video-widget__details-name">Видео о проекте</dd>
+                </div>
+                <div>
+                  <dt>Длительность видео</dt>
+                  <dd class="video-widget__details-time">1:25 минут</dd>
+                </div>
+              </dl>
+            </div>
+            <button class="video-widget__playback-button" type="button">
+              <img src="assets/img/video-poster.jpg" alt="">
+              <span class="video-widget__label">
+                <svg class="svg-icon play-icon">
+                  <use xlink:href="assets/img/symbol-sprite.svg#play"></use>
+                </svg>
+                <span>play</span>
+              </span>
+            </button>
+            <video class="video-widget__video" src="assets/video/video-placeholder.mp4"></video>
+          </div>
+        </div>
+      </section>
+      <div class="page-overlay fixed">
+        <section class="section request-call-form-section">
+          <h2 class="section__title request-call-form-section__title">Заказать звонок</h2>
+          <form class="form request-call-form-section__form" method="post">
+            <label class="input-field">
+              <span>Ваше имя</span>
+              <input name="name" type="text" placeholder="Ваше имя" required autocomplete="on">
+            </label>
+            <label class="input-field">
+              <span>Телефон</span>
+              <input name="phone" type="tel" placeholder="Телефон" required autocomplete="on">
+            </label>
+            <label class="input-field">
+              <span>E-mail</span>
+              <input name="email" type="email" placeholder="E-mail" required autocomplete="on">
+            </label>
+            <small class="form__note request-call-form-section__form-note">Нажимая на
+              кнопку «Отправить», вы ознакомлены и подтверждаете согласие с <a href="/policy" target="_blank"> политикой
+                обработки персональных данных</a>
+            </small>
+            <button class="main-button main-button--accent request-call-form-section__submit" type="submit" accent>
+              <span class="main-button__slide-label" data-label="Отправить">
+                <span class="visually-hidden">Отправить</span>
+              </span>
+            </button>
+            <button class="request-call-form-section__close-button" type="button">
+              <span class="visually-hidden">Закрыть</span>
+              <svg class="svg-icon cross-icon">
+                <use xlink:href="assets/img/symbol-sprite.svg#cross"></use>
+              </svg>
+            </button>
+          </form>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>
